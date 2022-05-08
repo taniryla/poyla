@@ -7,10 +7,12 @@ shifts the list in place (no mutation) by k positions
 
 2. What are the data inputs?
 head of a singly LinkedList and integer k
+k can be positive or negative
 
 3. Can you restate the problem in your own words?
 
-shift the list by k SVGTextPositioningElement
+shift the list by k positions include forward, backward
+and wraping (tail becomes the new head)
 
 4. Can the unknown be determined from the data inputs?
 
@@ -27,10 +29,25 @@ sufficient
 
 Step Two (Plan). Come up with concrete examples to help you understand the problem better. Find a connection between the data inputs and the unknown. You may be obliged to consider auxiliary problems if an immediate connection cannot be found. 
 8.  Have you seen it before? Or have you seen the same problem in a slightly different form? Do you know a related problem? 
+
+yes loop problem 
+
 9.   Do you know a coding strategy that could be useful? Look at the unknown! And try to think of a familiar problem having the same or a similar unknown. Here is a problem related to yours and solve before. Could you use it? Could you use its result? Could you use its method? 
+
+slow and fast pointers
+
+
 10. Start with a simple example. Could you restate the problem? Could you restate it still differently? 
+
+see notes
+
+
 11. What about examples with empty inputs? Any other edge case examples? What examples with invalid inputs? 
+ problem says list will always have one Node;
+
 12. Progress to more complex examples. What is your updated plan here to find a solution?
+
+
 13. If you still cannot solve the proposed problem, try to solve first some related problem. Could you imagine a more accessible related problem? A more general problem? A more special problem? An analogous problem? Could you solve a part of the problem? Keep only a part of the data inputs, drop the other part; how far is the unknown then determined, how can it vary? Could you derive something useful from the data? Could you think of other data appropriate to determine the unknown? Could you change the unknown or the data, or both if necessary, so that the new unknown and the new data are nearer to each other? Did you use all the data? Did you use the whole of the data inputs? Have you taken into account all essential notions involved in the problem?
 
 
