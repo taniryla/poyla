@@ -77,13 +77,12 @@ function shiftLinkedList(head, k) {
     fast = fast.next;
     slow = slow.next;
   }
-  // store slow.next.next into a newTail variable
-  let newVal = slow.next.next.value;
-  // move slow.next.value to become the new head
-  let head = slow.next.value;
-  slow.next = newVal;
-  if (slow.next.next !== fast) {
-    newVal = slow.next.next.value;
-    slow.next = head.next;
-  } else 
+  // point fast to slow to create a new loop
+  fast.next = slow;
+  // move the entire loop to the front at the head
+  // store oldHead in a variable
+  let oldHead = head;
+  slow = head;
+  // take the end of the loop and point to the front of the head
+  fast.next = oldHead;
 }
