@@ -71,7 +71,12 @@ class LinkedList {
 
 function shiftLinkedList(head, k) {
   // Write your code here.
+  let listLength = 1;
   let listTail = head;
+  while (listTail !== null) {
+    listTail = listTail.next;
+    listLength++;
+  }
 }
 //   let slow = null;
 //   let fast = head;
