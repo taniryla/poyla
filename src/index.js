@@ -73,15 +73,14 @@ function shiftLinkedList(head, k) {
   // Write your code here.
   let listLength = 1;
   let listTail = head;
-  while (listTail !== null) {
+  while (listTail.next !== null) {
     listTail = listTail.next;
     listLength++;
   }
   let offset = Math.abs(k) % listLength;
   if (offset === 0) return head;
 
-  let newTailPosition = listLength - offset;
-  k > 0 ? newTailPosition : offset;
+  let newTailPosition = k > 0 ? listLength - offset : offset;
   let newTail = head;
   for (let i = 1; i < newTailPosition; i++) {
     newTail = newTail.next;
