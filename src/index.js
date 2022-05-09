@@ -70,6 +70,8 @@ class LinkedList {
 
 function shiftLinkedList(head, k) {
   // Write your code here.
+  let slow = null;
+  let fast = head;
   while (fast <= k) {
     fast = fast.next;
   }
