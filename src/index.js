@@ -42,6 +42,7 @@
 
 // 11. What about examples with empty inputs? Any other edge case examples? What examples with invalid inputs?
 //  problem says list will always have one Node;
+// negative k integers or large k integers
 
 // 12. Progress to more complex examples. What is your updated plan here to find a solution?
 
