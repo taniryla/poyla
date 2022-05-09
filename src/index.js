@@ -82,6 +82,10 @@ function shiftLinkedList(head, k) {
 
   let newTailPosition = listLength - offset;
   k > 0 ? newTailPosition : offset;
+  let newTail = head;
+  for (let i = 1; i < newTailPosition; i++) {
+    newTail = newTail.next;
+  }
 }
 //   let slow = null;
 //   let fast = head;
