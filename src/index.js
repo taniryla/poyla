@@ -71,23 +71,25 @@ class LinkedList {
 
 function shiftLinkedList(head, k) {
   // Write your code here.
-  let slow = null;
-  let fast = head;
-  let count = 0;
-  while (fast <= k) {
-    fast = fast.next;
-  }
-  while (fast.next !== null) {
-    fast = fast.next;
-    slow = slow.next;
-    count++;
-  }
-  // point fast to slow to create a new loop
-  fast.next = slow;
-  // move the entire loop to the front at the head
-  // store oldHead in a variable
-  let oldHead = head;
-  slow = head;
-  // take the end of the loop and point to the front of the head
-  fast.next = oldHead;
+  let listTail = head;
 }
+//   let slow = null;
+//   let fast = head;
+//   let count = 0;
+//   while (fast <= k) {
+//     fast = fast.next;
+//   }
+//   while (fast.next !== null) {
+//     fast = fast.next;
+//     slow = slow.next;
+//     count++;
+//   }
+//   // point fast to slow to create a new loop
+//   fast.next = slow;
+//   // move the entire loop to the front at the head
+//   // store oldHead in a variable
+//   let oldHead = head;
+//   slow = head;
+//   // take the end of the loop and point to the front of the head
+//   fast.next = oldHead;
+// }
