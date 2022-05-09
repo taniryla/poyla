@@ -79,6 +79,7 @@ function shiftLinkedList(head, k) {
   while (fast.next !== null) {
     fast = fast.next;
     slow = slow.next;
+    let newTail = slow;
   }
   // point fast to slow to create a new loop
   fast.next = slow;
